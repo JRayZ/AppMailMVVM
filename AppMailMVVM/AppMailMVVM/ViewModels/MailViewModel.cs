@@ -30,7 +30,7 @@ namespace AppMailMVVM.ViewModels
             });
             AddCommand = new Command(async () => {
 
-                mails.Add(new mail(Title, Description, From, image));
+                mails.Add(new mail(Title, Description, From, To, image));
 
                 await App.Current.MainPage.Navigation.PopAsync();
             });

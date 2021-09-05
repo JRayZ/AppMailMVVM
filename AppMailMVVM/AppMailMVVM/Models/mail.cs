@@ -6,12 +6,12 @@ namespace AppMailMVVM.Models
 {
     public class mail
     {
-        public mail(string title, string description, string from, string photoPath)
+        public mail(string title, string description, string from, string imagePath)
         {
             Title = title;
             Description = description;
             From = from;
-            PhotoPath = photoPath;
+            ImagePath = imagePath;
         }
 
         public mail(string title, string description, string from, string to, string image)
@@ -30,6 +30,6 @@ namespace AppMailMVVM.Models
         public string To { get; set; }
         public DateTime date { get; set; }
         public string Image { get; set; }
-        public string PhotoPath { get; }
+        public string ImagePath { get; }
     }
 }
